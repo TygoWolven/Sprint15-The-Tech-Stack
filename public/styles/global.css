@@ -1,6 +1,13 @@
+:root {
+    /* Colors */
+    --lavender: #a675f5;
+}
+
 * {
     margin: 0;
     padding: 0;
     list-style: none;
     text-decoration: none;
+
+    color: black;
 }
