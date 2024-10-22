@@ -1,9 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import Footer from '../components/Footer.astro';
 import Card from '../components/Card.astro';
 ---
 
-<Layout title="Welcome to FDND.">
+<Layout title="Frontend Design & Development">
 	<main>
 		<svg
 			class="astro-a"
@@ -33,7 +34,7 @@ import Card from '../components/Card.astro';
 				</linearGradient>
 			</defs>
 		</svg>
-		<h1>Welcome to <span class="text-gradient">FDND</span></h1>
+		<h1>Programma 2024-2025</h1>
 		<p class="instructions">
 			To get started, open the directory <code>src/pages</code> in your project.<br />
 			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
@@ -61,15 +62,15 @@ import Card from '../components/Card.astro';
 			/>
 		</ul>
 	</main>
+	<Footer />
 </Layout>
 
 <style>
 	main {
 		margin: auto;
 		padding: 1rem;
-		width: 800px;
+		width: 100vw;
 		max-width: calc(100% - 2rem);
-		color: white;
 		font-size: 20px;
 		line-height: 1.6;
 	}
