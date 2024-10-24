@@ -12,29 +12,112 @@ import Semesters from '../components/Semesters.svelte';
 			elke sprint heeft een eigen thema en opdrachten. Het 4e semester is de Meesterproef, dan laat je 
 			zien dat je alle HBO frontend skills en vaardigheden beheerst.
 		</p> 
+
+		<h2>Semesters & Sprints</h2>
+
+		<div class="semesters">
+			<div class="semester"> 
+				<h3>Semester 1: Static Web</h3>
+				<ul role="list">
+					<Card
+						title="Sprint 1:"
+						body="Your Tribe"
+					/>
+					<Card
+						title="Sprint 2:"
+						body="The Client"
+					/>
+					<Card
+						title="Sprint 3:"
+						body="All Human"
+					/>
+					<Card
+						title="Sprint 4:"
+						body="Look and Feel"
+					/>
+					<Card
+						title="Sprint 5:"
+						body="Fix the Flow"
+					/>
+					<Card
+						title="Sprint 6:"
+						body="The Startup"
+					/>
+				</ul>
+			</div>
+			<div class="semester">
+				<h3>Semester 2: Data-Driven Web</h3>
+				<ul role="list">
+					<Card
+						title="Sprint 7:"
+						body="Connect Your Tribe"
+					/>
+					<Card
+						title="Sprint 8:"
+						body="Server-Side Rendering"
+					/>
+					<Card
+						title="Sprint 9:"
+						body="The Web is for Everyone"
+					/>
+					<Card
+						title="Sprint 10:"
+						body="User Experience"
+					/>
+					<Card
+						title="Sprint 11:"
+						body="Pleasurable AI"
+					/>
+					<Card
+						title="Sprint 12:"
+						body="Proof of Concept"
+					/>
+				</ul>
+			</div>
+			<div class="semester">
+				<h3>Semester 2: Data-Driven Web</h3>
+				<ul role="list">
+					<Card
+						title="Sprint 13:"
+						body="Your Tribe for Life"
+					/>
+					<Card
+						title="Sprint 14:"
+						body="Lose Your Head"
+					/>
+					<Card
+						title="Sprint 15:"
+						body="Choices, Choices"
+					/>
+					<Card
+						title="Sprint 16:"
+						body="Don't Repeat Yourself"
+					/>
+					<Card
+						title="Sprint 17:"
+						body="User Needs"
+					/>
+					<Card
+						title="Sprint 18:"
+						body="Release Candidate"
+					/>
+				</ul>
+			</div>
+			<div class="semester">
+				<h3>Semester 4: Meesterproef</h3>
+				<ul role="list">
+					<Card
+						title="Sprint 19:"
+						body="Free Space"
+					/>
+					<Card
+						title="Sprint 20:"
+						body="Final Sprint"
+					/>
+				</ul>
+			</div>
+		</div>
 		<Semesters />
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
 	</main>
 </Layout>
 
@@ -44,20 +127,23 @@ import Semesters from '../components/Semesters.svelte';
 		padding: 1rem;
 		width: 100vw;
 		max-width: calc(100% - 2rem);
-		font-size: 20px;
 		line-height: 1.6;
 	}
 	h1 {
-		font-size: 4rem;
+		font-size: 2rem;
 		font-weight: 700;
 		line-height: 1;
-		text-align: center;
-		margin-bottom: 1em;
+		margin-bottom: 0.5em;
 	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 2rem;
-		padding: 0;
+	h2 {
+		margin-top: 1em;
+	}
+	p {
+		max-width: 77ch;
+	}
+	.semesters {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 2em;
 	}
 </style>
