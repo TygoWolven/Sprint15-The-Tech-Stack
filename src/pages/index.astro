@@ -17,7 +17,7 @@ import Semesters from '../components/Semesters.svelte';
 
 		<div class="semesters">
 			<div class="semester"> 
-				<h3>Semester 1: Static Web</h3>
+				<a href="/semester1"><h3><span>Semester 1:</span> Static Web</h3></a>
 				<ul role="list">
 					<Card
 						title="Sprint 1:"
@@ -46,7 +46,7 @@ import Semesters from '../components/Semesters.svelte';
 				</ul>
 			</div>
 			<div class="semester">
-				<h3>Semester 2: Data-Driven Web</h3>
+				<a href="/semester2"><h3><span>Semester 2:</span> Data-Driven Web</h3></a>
 				<ul role="list">
 					<Card
 						title="Sprint 7:"
@@ -75,7 +75,7 @@ import Semesters from '../components/Semesters.svelte';
 				</ul>
 			</div>
 			<div class="semester">
-				<h3>Semester 2: Data-Driven Web</h3>
+				<h3><span>Semester 3:</span> Workflow, Tooling & Frameworks</h3>
 				<ul role="list">
 					<Card
 						title="Sprint 13:"
@@ -104,7 +104,7 @@ import Semesters from '../components/Semesters.svelte';
 				</ul>
 			</div>
 			<div class="semester">
-				<h3>Semester 4: Meesterproef</h3>
+				<h3><span>Semester 4:</span> Meesterproef</h3>
 				<ul role="list">
 					<Card
 						title="Sprint 19:"
@@ -124,9 +124,9 @@ import Semesters from '../components/Semesters.svelte';
 <style>
 	main {
 		margin: auto;
-		padding: 1rem;
+		padding: 4rem;
 		width: 100vw;
-		max-width: calc(100% - 2rem);
+		max-width: calc(100% - 8rem);
 		line-height: 1.6;
 	}
 	h1 {
@@ -136,14 +136,23 @@ import Semesters from '../components/Semesters.svelte';
 		margin-bottom: 0.5em;
 	}
 	h2 {
-		margin-top: 1em;
+		margin-top: 2em;
+	}
+	h3 {
+		display: flex;
+		flex-direction: column;
+		line-height: 1.1em;
+		margin-top: 0.5em;
+	}
+	span {
+		font-size: 0.7em;
 	}
 	p {
 		max-width: 77ch;
 	}
 	.semesters {
 		display: flex;
-		flex-wrap: wrap;
+		overflow-x: scroll;
 		gap: 2em;
 	}
 </style>

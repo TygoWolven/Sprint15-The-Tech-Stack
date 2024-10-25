@@ -17,6 +17,7 @@ const {title, body } = Astro.props;
 </li>
 <style>
 	.link-card {
+		position: relative;
 		display: flex;
 		padding: 1em;
 		border-radius: 10px;
@@ -24,6 +25,7 @@ const {title, body } = Astro.props;
 		min-width: 17em;
 		border: 1px solid black;
 		margin: 0.25em 0;
+		background: white;
 	}
 	h2 {
 		margin: 0;
@@ -34,6 +36,6 @@ const {title, body } = Astro.props;
 		margin-left: 0.5em;
 	}
 	.link-card:hover {
-		background: var(--lavender);
+		background: #fdfa84;
 	}
 </style>
